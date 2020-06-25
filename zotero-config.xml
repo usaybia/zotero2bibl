@@ -1,31 +1,64 @@
 <zotero-config>
     <!-- Used by get-zotero-data.pp.xql-->
-    <groupid></groupid>
+    <groupid>2349036/collections/SZNGBJ7Z</groupid>
     <last-modified-version></last-modified-version>
     <!-- format json or tei -->
     <format>tei</format>
-    <data-dir>/db/apps/bibl-test-app</data-dir>
-    <base-uri>http://syriaca.org/bibl</base-uri>
+    <data-dir>/db/apps/usaybia-data/data/bibl/tei</data-dir>
+    <base-uri>http://usaybia.net/bibl</base-uri>
     <!-- Allowed values: auto-generated, zotero -->
     <id-pattern>zotero</id-pattern>
     <!-- Values used to build TEI records -->
-    <sponsor xmlns="http://www.tei-c.org/ns/1.0">Syriaca.org: The Syriac Reference Portal</sponsor>
-    <funder xmlns="http://www.tei-c.org/ns/1.0">The National Endowment for the Humanities</funder>
-    <principal xmlns="http://www.tei-c.org/ns/1.0">David A. Michelson</principal>
-    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
-    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
-    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
-    <respStmt>
-        <resp>XML coded by</resp>
-        <name ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
-    </respStmt>
-    <respStmt>
-        <resp>Page numbers entered by</resp>
-        <name ref="http://syriaca.org/documentation/editors.xml#avawter">Alex Vawter</name>
-    </respStmt>
+    <sponsor ref="https://www.uni-muenchen.de">
+        <orgName>Ludwig Maximilian University of Munich</orgName>
+                 (<orgName xml:lang="de">Ludwig-Maximilians-Universität München</orgName>)
+             </sponsor>
+     <sponsor ref="http://www.naher-osten.uni-muenchen.de">
+        <orgName>Institute of Near and Middle Eastern Studies</orgName>
+                 (<orgName xml:lang="de">Institut für den Nahen und Mittleren Osten</orgName>)
+             </sponsor>
+     <funder ref="https://www.bmbf.de/">
+        <orgName>German Federal Ministry of Education and Research</orgName>
+                 (<orgName xml:lang="de">Bundesministerium für Bildung und Forschung</orgName>)
+             </funder>
+     <principal ref="#ngibson">Nathan P. Gibson</principal>
+     <editor xml:id="ngibson"
+             role="editor"
+             ref="https://usaybia.net/documentation/editors.xml#ngibson                          http://syriaca.org/documentation/editors.html#ngibson                          https://www.naher-osten.uni-muenchen.de/personen/wiss_ma/gibson/index.html                         http://orcid.org/0000-0003-0786-8075                         http://viaf.org/viaf/59147905242279092527">Nathan P. Gibson</editor>
+     <editor xml:id="vbirkhahn"
+             role="contributor"
+             ref="https://usaybia.net/documentation/editors.xml#vbirkhahn                          https://www.naher-osten.uni-muenchen.de/personen/fachschaft/vanessa_birkhahn/index.html">Vanessa Birkhahn</editor>
+     <editor xml:id="nloehr"
+             role="contributor"
+             ref="https://usaybia.net/documentation/editors.xml#nloehr                         https://www.naher-osten.uni-muenchen.de/personen/wiss_ma/nadine_loehr/index.html">Nadine Löhr</editor>
+     <editor role="creator" ref="#ngibson">Nathan P. Gibson</editor>
+     <editor role="creator" ref="#vbirkhahn">Vanessa Birkhahn</editor>
+     <editor role="creator" ref="#nloehr">Nadine Löhr</editor>
+     <respStmt>
+        <resp>Editing and final proofing by</resp>
+        <name type="person" ref="#ngibson">Nathan P. Gibson</name>
+     </respStmt>
+     <respStmt>
+        <resp>Checking bibliographic data by</resp>
+        <name type="person" ref="#vbirkhahn">Vanessa Birkhahn</name>
+     </respStmt>
+     <respStmt>
+        <resp>Bibliography curation and entry by</resp>
+        <name type="person" ref="#nloehr">Nadine Löhr</name>
+     </respStmt>
+     <respStmt>
+        <resp>Original data architecture of TEI person records for Srophé by</resp>
+        <name type="person"
+              ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+     </respStmt>
+     <respStmt>
+        <resp>Srophé app design and development by</resp>
+        <name type="person"
+              ref="http://syriaca.org/documentation/editors.xml#wsalesky">Winona Salesky</name>
+     </respStmt>
     <availability>
-        <licence target="http://creativecommons.org/licenses/by/3.0/">
-            <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+        <licence target="http://creativecommons.org/licenses/by/4.0/">
+            <p>Distributed under a Creative Commons Attribution 4.0 License.</p>
         </licence>
     </availability>
 </zotero-config>
